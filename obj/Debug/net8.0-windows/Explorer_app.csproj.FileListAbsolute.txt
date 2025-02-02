@@ -1,0 +1,17 @@
+D:\Explorer\Explorer_app\bin\Debug\net8.0-windows\Explorer_app.exe
+D:\Explorer\Explorer_app\bin\Debug\net8.0-windows\Explorer_app.deps.json
+D:\Explorer\Explorer_app\bin\Debug\net8.0-windows\Explorer_app.runtimeconfig.json
+D:\Explorer\Explorer_app\bin\Debug\net8.0-windows\Explorer_app.dll
+D:\Explorer\Explorer_app\bin\Debug\net8.0-windows\Explorer_app.pdb
+D:\Explorer\Explorer_app\obj\Debug\net8.0-windows\Explorer_app.Form1.resources
+D:\Explorer\Explorer_app\obj\Debug\net8.0-windows\Explorer_app.csproj.GenerateResource.cache
+D:\Explorer\Explorer_app\obj\Debug\net8.0-windows\Explorer_app.GeneratedMSBuildEditorConfig.editorconfig
+D:\Explorer\Explorer_app\obj\Debug\net8.0-windows\Explorer_app.AssemblyInfoInputs.cache
+D:\Explorer\Explorer_app\obj\Debug\net8.0-windows\Explorer_app.AssemblyInfo.cs
+D:\Explorer\Explorer_app\obj\Debug\net8.0-windows\Explorer_app.csproj.CoreCompileInputs.cache
+D:\Explorer\Explorer_app\obj\Debug\net8.0-windows\Explorer_app.sourcelink.json
+D:\Explorer\Explorer_app\obj\Debug\net8.0-windows\Explorer_app.dll
+D:\Explorer\Explorer_app\obj\Debug\net8.0-windows\refint\Explorer_app.dll
+D:\Explorer\Explorer_app\obj\Debug\net8.0-windows\Explorer_app.pdb
+D:\Explorer\Explorer_app\obj\Debug\net8.0-windows\Explorer_app.genruntimeconfig.cache
+D:\Explorer\Explorer_app\obj\Debug\net8.0-windows\ref\Explorer_app.dll
