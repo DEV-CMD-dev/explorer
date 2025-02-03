@@ -5,11 +5,11 @@ namespace Explorer_app
         public event Action DirectoryChanged;
 
         string? PreviousDirectory;
-        string? _CurrentDirectory;
+        string? _CurrentDirectory = Directory.GetCurrentDirectory();
 
-        public string CurrenDirectory
+        public string? CurrenDirectory
         {
-            get => Directory.GetCurrentDirectory();
+            get => _CurrentDirectory;
             set
             {
                 if (Directory.Exists(value))
@@ -37,20 +37,16 @@ namespace Explorer_app
 
         private void DirectoryForward_Click(object sender, EventArgs e)
         {
-            if (PreviousDirectory != null)
-            {
-                CurrenDirectory = PreviousDirectory;
-                UpdateDirectory();
-            }
+            CurrenDirectory = PreviousDirectory;
         }
 
         private void DirectoryBackward_Click(object sender, EventArgs e)
         {
-            string parentDirectory = Path.Combine(CurrenDirectory, "..");
-            if (Directory.Exists(parentDirectory))
+            if (CurrenDirectory != null)
             {
-                PreviousDirectory = _CurrentDirectory;
-                CurrenDirectory = parentDirectory;
+                string? path = Path.GetFullPath(Path.Combine(CurrenDirectory, ".."));
+                PreviousDirectory = CurrenDirectory;
+                CurrenDirectory = path;
             }
         }
     }
