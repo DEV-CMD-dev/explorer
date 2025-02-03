@@ -1,6 +1,7 @@
+using System.Diagnostics;
 namespace Explorer_app
 {
-    public partial class Form1 : Form
+    public partial class Explorer : Form
     {
         public event Action DirectoryChanged;
 
@@ -21,7 +22,7 @@ namespace Explorer_app
             }
         }
 
-        public Form1()
+        public Explorer()
         {
             InitializeComponent();
             UpdateDirectory();
@@ -62,5 +63,19 @@ namespace Explorer_app
                 CurrenDirectory = path;
             }
         }
+
+        private void GoToDirectory(object sender, EventArgs e)
+        {
+            string path = Path.Combine(CurrenDirectory!, FileList.SelectedItems[0].Text);
+            if (Directory.Exists(path))
+            {
+                CurrenDirectory = path;
+            }
+            else
+            {
+                Process.Start("explorer.exe",path);
+            }
+        }
+        
     }
 }
