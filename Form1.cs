@@ -14,11 +14,9 @@ namespace Explorer_app
             {
                 if (Directory.Exists(value))
                 {
-                    
                     Directory.SetCurrentDirectory(value);
                     _CurrentDirectory = value;
                     DirectoryChanged?.Invoke();
-                    UpdateDirectory();
                 }
             }
         }
@@ -30,9 +28,24 @@ namespace Explorer_app
             DirectoryChanged += () => UpdateDirectory();
         }
 
+        private void UpdateFileList()
+        {
+            FileList.Items.Clear();
+            if (CurrenDirectory != null)
+            {
+                var entries = Directory.GetFileSystemEntries(CurrenDirectory);
+                foreach (var e in entries)
+                {
+                    var fi = new FileInfo(e);
+                    FileList.Items.Add(fi.Name);
+                }
+            }
+        }
+
         private void UpdateDirectory()
         {
             DirectoryTextBox.Text = CurrenDirectory;
+            UpdateFileList();
         }
 
         private void DirectoryForward_Click(object sender, EventArgs e)

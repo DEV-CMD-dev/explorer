@@ -28,19 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            listView1 = new ListView();
+            FileList = new ListView();
             DirectoryForward = new Button();
             DirectoryTextBox = new TextBox();
             DirectoryBackward = new Button();
             SuspendLayout();
             // 
-            // listView1
+            // FileList
             // 
-            listView1.Location = new Point(12, 41);
-            listView1.Name = "listView1";
-            listView1.Size = new Size(776, 397);
-            listView1.TabIndex = 0;
-            listView1.UseCompatibleStateImageBehavior = false;
+            FileList.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            FileList.Location = new Point(12, 41);
+            FileList.Name = "FileList";
+            FileList.Size = new Size(776, 397);
+            FileList.TabIndex = 0;
+            FileList.UseCompatibleStateImageBehavior = false;
+            FileList.View = View.Tile;
             // 
             // DirectoryForward
             // 
@@ -77,7 +79,7 @@
             Controls.Add(DirectoryBackward);
             Controls.Add(DirectoryTextBox);
             Controls.Add(DirectoryForward);
-            Controls.Add(listView1);
+            Controls.Add(FileList);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -86,7 +88,7 @@
 
         #endregion
 
-        private ListView listView1;
+        private ListView FileList;
         private Button DirectoryForward;
         private TextBox DirectoryTextBox;
         private Button DirectoryBackward;
