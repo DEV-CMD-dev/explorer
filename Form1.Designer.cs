@@ -39,12 +39,13 @@
             // 
             FileList.BackColor = SystemColors.Window;
             FileList.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            FileList.LabelEdit = true;
             FileList.Location = new Point(12, 41);
             FileList.Name = "FileList";
             FileList.Size = new Size(776, 397);
             FileList.TabIndex = 0;
             FileList.UseCompatibleStateImageBehavior = false;
-            FileList.View = View.Tile;
+            FileList.View = View.Details;
             FileList.ItemActivate += GoToDirectory;
             // 
             // DirectoryForward

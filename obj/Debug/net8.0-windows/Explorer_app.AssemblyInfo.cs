@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Explorer_app")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1899d66da55616aff648ed0a828b19cacd33c53c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7a14ec5f2cd1454c697f3e8ea1d1106bcd0d2152")]
 [assembly: System.Reflection.AssemblyProductAttribute("Explorer_app")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Explorer_app")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
