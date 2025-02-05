@@ -47,6 +47,7 @@
             FileList.UseCompatibleStateImageBehavior = false;
             FileList.View = View.Details;
             FileList.ItemActivate += GoToDirectory;
+            FileList.MouseDown += FileList_MouseDown;
             // 
             // DirectoryForward
             // 
@@ -79,7 +80,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(794, 450);
             Controls.Add(DirectoryBackward);
             Controls.Add(DirectoryTextBox);
             Controls.Add(DirectoryForward);
